@@ -1,8 +1,7 @@
-// Time -> O(n) | Space -> O(n) - where n is the length of words
+// Time -> O(n * m) | Space -> O(n * m) - where n is the length of words array and m is the avg. length of the words
 function semordnilap(words) {
   
-  if (words.length === 0) return [];
-  else if (words.length === 1) return [];
+  if (words.length === 0 || words.length === 1) return [];
   
   let reversedWords = {};
   let result = [];
